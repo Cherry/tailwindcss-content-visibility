@@ -1,0 +1,33 @@
+{
+	"name": "tailwindcss-content-visibility",
+	"version": "0.1.0",
+	"repository": "https://github.com/Cherry/tailwindcss-content-visibility",
+	"license": "MIT",
+	"main": "src/index.js",
+	"files": [
+		"src"
+	],
+	"scripts": {
+		"lint": "npm run lint:js",
+		"lint:js": "eslint \"**/*.js\"",
+		"lint:js:fix": "eslint \"**/*.js\" --fix",
+		"test": "npm run lint && jest"
+	},
+	"devDependencies": {
+		"@nodecraft/eslint-config": "^16.0.0",
+		"eslint": "^8.10.0",
+		"eslint-plugin-jest": "^26.1.1",
+		"eslint-plugin-json": "^3.1.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-unicorn": "^41.0.0",
+		"jest": "^27.5.1",
+		"postcss": "^8.4.7",
+		"tailwindcss": "^3.0.23"
+	},
+	"peerDependencies": {
+		"tailwindcss": ">=3.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
