@@ -36,7 +36,7 @@ module.exports = {
 Combine the `content-visibility-{x}` and `contain-intrinsic-size-{x}` classes to control the visibility and natural size of an element.
 
 ```html
-<div class="content-visibility-auto contain-intrinsic-size-[0px_1000px]">
+<div class="content-visibility-auto contain-intrinsic-size-[auto_1000px]">
   ...
 </div>
 ```
@@ -46,7 +46,7 @@ This would output something like:
 	content-visibility: auto;
 }
 .contain-intrinsic-size-\[0px_1000px\] {
-	contain-intrinsic-size: 0px 1000px;
+	contain-intrinsic-size: auto 1000px;
 }
 ```
 

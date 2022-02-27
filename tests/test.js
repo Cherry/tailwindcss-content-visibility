@@ -17,6 +17,9 @@ const expected = `
 .contain-intrinsic-size-\\[120px_0px\\] {
     contain-intrinsic-size: 120px 0px
 }
+.contain-intrinsic-size-\\[auto_120px_auto_0px\\] {
+    contain-intrinsic-size: auto 120px auto 0px
+}
 .contain-intrinsic-size-example {
     contain-intrinsic-size: 1px 20px
 }
@@ -33,6 +36,7 @@ it('test', () => {
 						content-visibility-visible
 						contain-intrinsic-size-[0px_120px]
 						contain-intrinsic-size-[120px_0px]
+						contain-intrinsic-size-[auto_120px_auto_0px]
 						contain-intrinsic-size-example
 					`,
 				},
