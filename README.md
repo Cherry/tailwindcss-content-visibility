@@ -45,7 +45,7 @@ This would output something like:
 .content-visibility-auto {
 	content-visibility: auto;
 }
-.contain-intrinsic-size-\[0px_1000px\] {
+.contain-intrinsic-size-\[auto_1000px\] {
 	contain-intrinsic-size: auto 1000px;
 }
 ```
@@ -69,7 +69,7 @@ module.exports = {
 		extend: {
 			contentVisibility: {
 				'foo': 'bar',
-			}
+			},
 			containIntrinsicSize: {
 				example: '1px 20px',
 			},
