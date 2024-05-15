@@ -26,7 +26,7 @@ const expected = `
 `;
 
 it('test', () => {
-	const css = postcss([
+	postcss([
 		require('tailwindcss')({
 			content: [
 				{
@@ -50,6 +50,9 @@ it('test', () => {
 				},
 			},
 		}),
-	]).process('@tailwind utilities').css;
-	expect(css).toBe(expected.trim());
+	]).process('@tailwind utilities', {
+		from: undefined,
+	}).then((result) => {
+		expect(result.css).toBe(expected.trim());
+	});
 });

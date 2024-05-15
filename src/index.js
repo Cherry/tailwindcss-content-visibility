@@ -1,7 +1,7 @@
 'use strict';
 const plugin = require('tailwindcss/plugin');
 
-const contentVisibility = plugin(function({matchUtilities, theme}){
+const contentVisibility = plugin(function({ matchUtilities, theme }) {
 	matchUtilities(
 		{
 			'content-visibility': (value) => {
