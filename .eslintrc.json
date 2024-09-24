@@ -1,14 +1,10 @@
 {
 	"root": true,
 	"extends": [
-		"@nodecraft"
+		"@nodecraft/eslint-config/typescript"
 	],
-	"parserOptions": {
-		"ecmaVersion": 2021
-	},
 	"plugins": [
 		"json",
-		"node",
 		"unicorn"
 	]
 }

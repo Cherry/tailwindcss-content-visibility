@@ -1,4 +1,1 @@
-build/**/*.js
-store/**/*.js
-store/**/*.json
-dev-config.json
+dist

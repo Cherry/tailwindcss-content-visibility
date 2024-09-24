@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"declaration": true,
+		"lib": ["ESNext"],
+		"strict": true,
+		"alwaysStrict": true,
+		"moduleResolution": "bundler",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"strictNullChecks": false,
+		"noEmit": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}

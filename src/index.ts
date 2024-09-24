@@ -1,5 +1,4 @@
-'use strict';
-const plugin = require('tailwindcss/plugin');
+import plugin from 'tailwindcss/plugin';
 
 const contentVisibility = plugin(function({ matchUtilities, theme }) {
 	matchUtilities(
@@ -36,4 +35,4 @@ const contentVisibility = plugin(function({ matchUtilities, theme }) {
 	},
 });
 
-module.exports = contentVisibility;
+export default contentVisibility;

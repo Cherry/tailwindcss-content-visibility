@@ -1,5 +1,8 @@
-'use strict';
-const postcss = require('postcss');
+import postcss from 'postcss';
+import tailwind from 'tailwindcss';
+import { expect, it } from 'vitest';
+
+import tailwindCssContentVisibilityPlugin from '../src';
 
 const expected = `
 .content-visibility-auto {
@@ -25,9 +28,9 @@ const expected = `
 }
 `;
 
-it('test', () => {
-	postcss([
-		require('tailwindcss')({
+it('test', async () => {
+	const results = await postcss([
+		tailwind({
 			content: [
 				{
 					raw: `
@@ -41,7 +44,7 @@ it('test', () => {
 					`,
 				},
 			],
-			plugins: [require('../')],
+			plugins: [tailwindCssContentVisibilityPlugin],
 			theme: {
 				extend: {
 					containIntrinsicSize: {
@@ -52,7 +55,7 @@ it('test', () => {
 		}),
 	]).process('@tailwind utilities', {
 		from: undefined,
-	}).then((result) => {
-		expect(result.css).toBe(expected.trim());
 	});
+
+	expect(results.css).toBe(expected.trim());
 });

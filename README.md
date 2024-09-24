@@ -21,14 +21,14 @@ Then add the plugin to your `tailwind.config.js` file:
 ```js
 // tailwind.config.js
 module.exports = {
-  theme: {
-    // ...
-  },
-  plugins: [
-    require('tailwindcss-content-visibility'),
-    // ...
-  ],
-}
+	theme: {
+		// ...
+	},
+	plugins: [
+		require("tailwindcss-content-visibility"),
+		// ...
+	],
+};
 ```
 
 ## Usage
@@ -37,10 +37,12 @@ Combine the `content-visibility-{x}` and `contain-intrinsic-size-{x}` classes to
 
 ```html
 <div class="content-visibility-auto contain-intrinsic-size-[auto_1000px]">
-  ...
+	...
 </div>
 ```
+
 This would output something like:
+
 ```css
 .content-visibility-auto {
 	content-visibility: auto;
@@ -52,10 +54,10 @@ This would output something like:
 
 Both utilities fully support JIT for custom values, but the following default values for `content-visibility` are supported:
 
-| Class | Output |
-| --- | --- |
-| `content-visibility-auto` | `auto` |
-| `content-visibility-hidden` | `hidden` |
+| Class                        | Output    |
+| ---------------------------- | --------- |
+| `content-visibility-auto`    | `auto`    |
+| `content-visibility-hidden`  | `hidden`  |
 | `content-visibility-visible` | `visible` |
 
 ## Configuration
@@ -65,27 +67,27 @@ You can configure additional defaults and classes under the `contentVisibility` 
 ```js
 // tailwind.config.js
 module.exports = {
-  theme: {
+	theme: {
 		extend: {
 			contentVisibility: {
-				'foo': 'bar',
+				foo: "bar",
 			},
 			containIntrinsicSize: {
-				example: '1px 20px',
+				example: "1px 20px",
 			},
-		}
-  },
-}
+		},
+	},
+};
 ```
+
 With the above configuration, you could then use:
 
 ```html
-<div class="content-visibility-foo contain-intrinsic-size-example">
-  ...
-</div>
+<div class="content-visibility-foo contain-intrinsic-size-example">...</div>
 ```
 
 And this would output something like:
+
 ```css
 .content-visibility-foo {
 	content-visibility: bar;

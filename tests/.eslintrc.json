@@ -1,8 +1,8 @@
 {
-	"env": {
-		"jest/globals": true
-	},
+	"extends": [
+		"plugin:@vitest/legacy-recommended"
+	],
 	"plugins": [
-		"jest"
+		"@vitest"
 	]
 }
