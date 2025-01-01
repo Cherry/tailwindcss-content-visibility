@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2025-01-01
+
+- Improves CJS interop. This may help resolve issues with some projects that use CJS config files
+
+## [1.0.1] - 2024-12-17
+
+- Improves import conditions. No user-facing changes
+
 ## [1.0.0] - 2024-09-24
 
 - Internal build/testing changes, uses TypeScript

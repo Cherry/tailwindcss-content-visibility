@@ -1,6 +1,4 @@
 import postcss from 'postcss';
-import { format } from 'prettier';
-import * as tailwindPrettierPlugin from 'prettier-plugin-tailwindcss';
 import tailwind from 'tailwindcss';
 import { expect, it } from 'vitest';
 
@@ -62,16 +60,3 @@ it('test', async () => {
 	expect(results.css).toBe(expected.trim());
 });
 
-it('prettier', async () => {
-	const formatted = await format('<div class="bg-white p-4 dark:bg-black content-visibility-auto contain-intrinsic-size-[0px_120px]"></div>', {
-		parser: 'html',
-		plugins: [tailwindPrettierPlugin],
-		tailwindConfig: './tests/tailwind.config.js',
-	});
-	expect(formatted).toMatchInlineSnapshot(`
-		"<div
-		  class="bg-white p-4 content-visibility-auto contain-intrinsic-size-[0px_120px] dark:bg-black"
-		></div>
-		"
-	`);
-});

@@ -1,6 +1,6 @@
 {
 	"name": "tailwindcss-content-visibility",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"repository": "https://github.com/Cherry/tailwindcss-content-visibility",
 	"license": "MIT",
 	"type": "module",
@@ -24,7 +24,7 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup src/index.ts --format cjs,esm --experimental-dts --clean --sourcemap",
+		"build": "tsup",
 		"check-types": "tsc --noEmit",
 		"lint": "npm run lint:js",
 		"lint:js": "eslint \"**/*.{js,ts}\"",
@@ -32,12 +32,15 @@
 		"test": "npm run lint && npm run check-types && vitest run"
 	},
 	"devDependencies": {
+		"@angular-eslint/template-parser": "^19.0.2",
 		"@microsoft/api-extractor": "^7.48.1",
 		"@nodecraft/eslint-config": "^44.3.0",
-		"@typescript-eslint/eslint-plugin": "^8.18.1",
-		"@vitest/eslint-plugin": "^1.1.18",
+		"@types/node": "^22.10.3",
+		"@typescript-eslint/eslint-plugin": "^8.19.0",
+		"@vitest/eslint-plugin": "^1.1.23",
 		"eslint": "^8.57.1",
 		"eslint-plugin-json": "^4.0.1",
+		"eslint-plugin-tailwindcss": "^3.17.5",
 		"eslint-plugin-unicorn": "^56.0.1",
 		"postcss": "^8.4.49",
 		"prettier": "^3.4.2",
