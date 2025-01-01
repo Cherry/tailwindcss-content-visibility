@@ -6,7 +6,6 @@ describe('imports', () => {
 	it('esm', () => {
 		expect(tailwindCssContentVisibilityPlugin).toBeDefined();
 		expect(tailwindCssContentVisibilityPlugin.handler).toBeInstanceOf(Function);
-		expect(tailwindCssContentVisibilityPlugin.handler).toBeInstanceOf(Function);
 		expect(tailwindCssContentVisibilityPlugin.config).toHaveProperty('theme');
 		expect(tailwindCssContentVisibilityPlugin.config?.theme).toHaveProperty('contentVisibility');
 	});
