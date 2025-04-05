@@ -32,25 +32,26 @@
 		"test": "npm run lint && npm run check-types && vitest run"
 	},
 	"devDependencies": {
-		"@angular-eslint/template-parser": "^19.0.2",
-		"@microsoft/api-extractor": "^7.48.1",
-		"@nodecraft/eslint-config": "^44.3.0",
-		"@types/node": "^22.10.3",
-		"@typescript-eslint/eslint-plugin": "^8.19.0",
-		"@vitest/eslint-plugin": "^1.1.23",
+		"@angular-eslint/template-parser": "^19.3.0",
+		"@microsoft/api-extractor": "^7.52.3",
+		"@nodecraft/eslint-config": "^46.0.0",
+		"@types/node": "^22.14.0",
+		"@typescript-eslint/eslint-plugin": "^8.29.0",
+		"@vitest/eslint-plugin": "^1.1.39",
 		"eslint": "^8.57.1",
 		"eslint-plugin-json": "^4.0.1",
-		"eslint-plugin-tailwindcss": "^3.17.5",
+		"eslint-plugin-tailwindcss": "^3.18.0",
 		"eslint-plugin-unicorn": "^56.0.1",
-		"postcss": "^8.4.49",
-		"prettier": "^3.4.2",
-		"prettier-plugin-tailwindcss": "^0.6.9",
+		"postcss": "^8.5.3",
+		"prettier": "^3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
 		"tailwindcss": "^3.4.17",
-		"tsup": "^8.3.5",
-		"vitest": "^2.1.8"
+		"tailwindcss4": "npm:tailwindcss@4.1.3",
+		"tsup": "^8.4.0",
+		"vitest": "^3.1.1"
 	},
 	"peerDependencies": {
-		"tailwindcss": "^3.0.0"
+		"tailwindcss": "^3.0.0 || ^4.0.0"
 	},
 	"publishConfig": {
 		"access": "public"
