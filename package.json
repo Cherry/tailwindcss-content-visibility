@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"@angular-eslint/template-parser": "^19.3.0",
-		"@microsoft/api-extractor": "^7.52.3",
+		"@microsoft/api-extractor": "^7.58.2",
 		"@nodecraft/eslint-config": "^46.0.0",
 		"@types/node": "^22.14.0",
 		"@typescript-eslint/eslint-plugin": "^8.29.0",
