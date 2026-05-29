@@ -1,6 +1,6 @@
 {
 	"name": "tailwindcss-content-visibility",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"repository": "https://github.com/Cherry/tailwindcss-content-visibility",
 	"license": "MIT",
 	"type": "module",
@@ -32,23 +32,23 @@
 		"test": "npm run lint && npm run check-types && vitest run"
 	},
 	"devDependencies": {
-		"@angular-eslint/template-parser": "^19.3.0",
-		"@microsoft/api-extractor": "^7.52.3",
+		"@angular-eslint/template-parser": "^19.8.1",
+		"@microsoft/api-extractor": "^7.58.7",
 		"@nodecraft/eslint-config": "^46.0.0",
-		"@types/node": "^22.14.0",
-		"@typescript-eslint/eslint-plugin": "^8.29.0",
-		"@vitest/eslint-plugin": "^1.1.39",
+		"@types/node": "^24.12.4",
+		"@typescript-eslint/eslint-plugin": "^8.60.0",
+		"@vitest/eslint-plugin": "^1.6.18",
 		"eslint": "^8.57.1",
 		"eslint-plugin-json": "^4.0.1",
-		"eslint-plugin-tailwindcss": "^3.18.0",
+		"eslint-plugin-tailwindcss": "3.18.0",
 		"eslint-plugin-unicorn": "^56.0.1",
-		"postcss": "^8.5.3",
-		"prettier": "^3.5.3",
-		"prettier-plugin-tailwindcss": "^0.6.11",
-		"tailwindcss": "^3.4.17",
-		"tailwindcss4": "npm:tailwindcss@4.1.3",
-		"tsup": "^8.4.0",
-		"vitest": "^3.1.1"
+		"postcss": "^8.5.15",
+		"prettier": "^3.8.3",
+		"prettier-plugin-tailwindcss": "^0.8.0",
+		"tailwindcss": "^3.4.19",
+		"tailwindcss4": "npm:tailwindcss@4.3.0",
+		"tsup": "^8.5.1",
+		"vitest": "^4.1.7"
 	},
 	"peerDependencies": {
 		"tailwindcss": "^3.0.0 || ^4.0.0"

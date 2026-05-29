@@ -95,6 +95,19 @@ describe('plugin', () => {
 			'/*! tailwindcss vX.Y.Z | MIT License | https://tailwindcss.com */',
 		)).toMatchInlineSnapshot(`
 			"/*! tailwindcss vX.Y.Z | MIT License | https://tailwindcss.com */
+			@layer properties;
+			.content-visibility-auto {
+			  --tw-content: auto;
+			  content: var(--tw-content);
+			}
+			.content-visibility-hidden {
+			  --tw-content: hidden;
+			  content: var(--tw-content);
+			}
+			.content-visibility-visible {
+			  --tw-content: visible;
+			  content: var(--tw-content);
+			}
 			.contain-intrinsic-size-\\[0px_120px\\] {
 			  contain-intrinsic-size: 0px 120px;
 			}
@@ -115,6 +128,18 @@ describe('plugin', () => {
 			}
 			.content-visibility-visible {
 			  content-visibility: visible;
+			}
+			@property --tw-content {
+			  syntax: "*";
+			  inherits: false;
+			  initial-value: "";
+			}
+			@layer properties {
+			  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+			    *, ::before, ::after, ::backdrop {
+			      --tw-content: "";
+			    }
+			  }
 			}
 			"
 		`);
